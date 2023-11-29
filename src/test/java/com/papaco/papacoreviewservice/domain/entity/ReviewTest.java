@@ -9,8 +9,8 @@ import java.util.UUID;
 
 import static com.papaco.papacoreviewservice.domain.vo.MateStatus.JOINED;
 import static com.papaco.papacoreviewservice.domain.vo.MateStatus.PROPOSED;
-import static com.papaco.papacoreviewservice.framework.adapter.input.ReviewStatus.COMPLETED;
-import static com.papaco.papacoreviewservice.framework.adapter.input.ReviewStatus.DEMANDED;
+import static com.papaco.papacoreviewservice.domain.vo.ReviewStatus.COMPLETED;
+import static com.papaco.papacoreviewservice.domain.vo.ReviewStatus.DEMANDED;
 import static org.assertj.core.api.Assertions.*;
 
 class ReviewTest {

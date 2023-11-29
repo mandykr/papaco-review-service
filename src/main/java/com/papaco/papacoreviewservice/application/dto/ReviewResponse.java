@@ -3,7 +3,7 @@ package com.papaco.papacoreviewservice.application.dto;
 import com.papaco.papacoreviewservice.domain.entity.Mate;
 import com.papaco.papacoreviewservice.domain.entity.Review;
 import com.papaco.papacoreviewservice.domain.vo.MateStatus;
-import com.papaco.papacoreviewservice.framework.adapter.input.ReviewStatus;
+import com.papaco.papacoreviewservice.domain.vo.ReviewStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

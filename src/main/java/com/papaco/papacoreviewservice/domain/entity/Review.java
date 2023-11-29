@@ -1,14 +1,14 @@
 package com.papaco.papacoreviewservice.domain.entity;
 
 import com.papaco.papacoreviewservice.domain.vo.MateStatus;
-import com.papaco.papacoreviewservice.framework.adapter.input.ReviewStatus;
+import com.papaco.papacoreviewservice.domain.vo.ReviewStatus;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.UUID;
 
-import static com.papaco.papacoreviewservice.framework.adapter.input.ReviewStatus.*;
+import static com.papaco.papacoreviewservice.domain.vo.ReviewStatus.*;
 import static lombok.AccessLevel.PROTECTED;
 
 @Getter
@@ -26,6 +26,8 @@ public class Review {
             foreignKey = @ForeignKey(name = "fk_review_to_mate")
     )
     private Mate mate;
+
+    @Enumerated(value = EnumType.STRING)
     private ReviewStatus status;
 
     public Review(UUID id, Mate mate) {

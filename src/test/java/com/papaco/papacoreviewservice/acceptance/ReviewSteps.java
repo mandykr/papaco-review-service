@@ -14,7 +14,7 @@ public class ReviewSteps {
     private static final String ENDPOINT = "/reviews";
 
     public static ExtractableResponse<Response> 리뷰_요청(UUID mateId) {
-        String uri = String.format("%s/%s/%s/%s", ENDPOINT, "mates", mateId, "demand");
+        String uri = String.format("%s/%s/%s/%s", ENDPOINT, "mandykr/papaco/mates", mateId, "demand");
         return RestAssured.given().log().all()
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .when().post(uri)
