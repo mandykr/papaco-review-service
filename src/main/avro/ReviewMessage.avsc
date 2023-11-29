@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "ReviewMessage",
+  "namespace": "com.papaco.avro.schema",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "mateId",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    }
+  ]
+}
